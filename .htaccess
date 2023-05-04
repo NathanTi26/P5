@@ -1,0 +1,9 @@
+# cache images/pdf docs for 10 days
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|js|webp)$">
+Header set Cache-Control "max-age=864000, public, must-revalidate"
+</FilesMatch>
+
+# cache html/htm/xml/txt files for 2 hours
+<FilesMatch "\.(html|htm|xml|txt|xsl)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
