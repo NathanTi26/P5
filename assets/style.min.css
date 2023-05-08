@@ -384,6 +384,7 @@ textarea {
     background-color: #0d6efd;
 }
 .modal {
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0px;
